@@ -38,8 +38,8 @@ public class WeatherAPIService {
 	public List<WeatherInfo> getWeatherInfo(String onecall) throws WeatherAPIException {
 		WeatherResult alerts = getAPIData("onecall", "hourly", API_URL, API_KEY);
 		List<WeatherInfo> weatherInfoList = new ArrayList<>(alerts.getAlerts().size());
-		for (WeatherInfo theAlert : Alert.getAlerts()) {
-			weatherInfoList.add(new WeatherInfo(theAlert));
+		for (Alert theAlerts : Alert.getAlerts()) {
+			weatherInfoList.add(new WeatherInfo(theAlerts));
 		}
 		return weatherInfoList;
 

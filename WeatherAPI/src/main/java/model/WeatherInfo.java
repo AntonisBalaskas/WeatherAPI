@@ -23,15 +23,15 @@ public class WeatherInfo {
 			this.day=day;
 	 }
 	
-	 public WeatherInfo(WeatherInfo theResult) {
-			this.temp = theResult.getTemp();
-			this.min = theResult.getMin();
-			this.max = theResult.getMax();
-			this.humidity = theResult.getHumidity();
-			this.wind_speed=theResult.getWind_speed();
-			this.description=theResult.getDescription();
-			this.dt=theResult.getDt();
-			this.day=theResult.getDay();
+	 public WeatherInfo(WeatherInfo theAlerts) {
+			this.temp = theAlerts.getTemp();
+			this.min = theAlerts.getMin();
+			this.max = theAlerts.getMax();
+			this.humidity = theAlerts.getHumidity();
+			this.wind_speed=theAlerts.getWind_speed();
+			this.description=theAlerts.getDescription();
+			this.dt=theAlerts.getDt();
+			this.day=theAlerts.getDay();
 			
 		}
 	 
