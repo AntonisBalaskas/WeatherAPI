@@ -21,6 +21,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import exception.WeatherAPIException;
 import model.WeatherInfo;
+import model.openweathermap.Alert;
 import model.openweathermap.ErrorResponse;
 import model.openweathermap.Weather;
 import model.openweathermap.WeatherResult;
@@ -35,10 +36,10 @@ public class WeatherAPIService {
 	}
 
 	public List<WeatherInfo> getWeatherInfo(String onecall) throws WeatherAPIException {
-		WeatherResult result = getAPIData("onecall", "hourly", API_URL, API_KEY);
-		List<WeatherInfo> weatherInfoList = new ArrayList<>(result.getResults().size());
-		for (WeatherInfo theResult : result.getResults()) {
-			weatherInfoList.add(new WeatherInfo(theResult));
+		WeatherResult alerts = getAPIData("onecall", "hourly", API_URL, API_KEY);
+		List<WeatherInfo> weatherInfoList = new ArrayList<>(alerts.getAlerts().size());
+		for (WeatherInfo theAlert : Alert.getAlerts()) {
+			weatherInfoList.add(new WeatherInfo(theAlert));
 		}
 		return weatherInfoList;
 

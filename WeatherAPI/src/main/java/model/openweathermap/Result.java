@@ -13,30 +13,30 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "temp",
-    "temp_min",
-    "temp_max",
+    "min",
+    "max",
     "humidity",
     "wind_speed",
-    "weather_description",
-    "hour",
+    "description",
+    "dt",
     "day"  
 })
 public class Result {
 
     @JsonProperty("temp")
     private Double temp;
-    @JsonProperty("temp_min")
-    private Double temp_min;
-    @JsonProperty("temp_max")
-    private Double temp_max;
+    @JsonProperty("min")
+    private Double min;
+    @JsonProperty("max")
+    private Double max;
     @JsonProperty("humidity")
     private Double humidity;
     @JsonProperty("wind_speed")
     private Double wind_speed;
-    @JsonProperty("weather_description")
-    private String weather_description;
-    @JsonProperty("hour")
-    private Integer hour;
+    @JsonProperty("description")
+    private String description;
+    @JsonProperty("dt")
+    private Double dt;
     @JsonProperty("day")
     private Double day;
     @JsonIgnore
@@ -52,24 +52,24 @@ public class Result {
         this.temp = temp;
     }
 
-    @JsonProperty("temp_min")
-    public Double getTemp_min() {
-        return temp_min;
+    @JsonProperty("min")
+    public Double getMin() {
+        return min;
     }
 
-    @JsonProperty("temp_min")
-    public void setTemp_min(Double temp_min) {
-        this.temp_min = temp_min;
+    @JsonProperty("min")
+    public void setMin(Double min) {
+        this.min = min;
     }
 
-    @JsonProperty("temp_max")
-    public Double getTemp_max() {
-        return temp_max;
+    @JsonProperty("max")
+    public Double getMax() {
+        return max;
     }
 
-    @JsonProperty("temp_max")
-    public void setTemp_max(Double temp_max) {
-        this.temp_max = temp_max;
+    @JsonProperty("max")
+    public void setMax(Double max) {
+        this.max = max;
     }
 
     @JsonProperty("humidity")
@@ -92,24 +92,24 @@ public class Result {
         this.wind_speed = wind_speed;
     }
 
-    @JsonProperty("weather_description")
-    public String weather_description() {
-        return weather_description;
+    @JsonProperty("description")
+    public String description() {
+        return description;
     }
 
-    @JsonProperty("weather_description")
-    public void setWeather_Description(String weather_description) {
-        this.weather_description = weather_description;
+    @JsonProperty("description")
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    @JsonProperty("hour")
-    public Integer getHour() {
-        return hour;
+    @JsonProperty("dt")
+    public Double getDt() {
+        return dt;
     }
 
-    @JsonProperty("hour")
-    public void setHour(Integer hour) {
-        this.hour = hour;
+    @JsonProperty("dt")
+    public void setDt(Double dt) {
+        this.dt = dt;
     }
 
     @JsonProperty("day")

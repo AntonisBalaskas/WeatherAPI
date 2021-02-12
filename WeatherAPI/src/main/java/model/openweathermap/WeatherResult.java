@@ -135,9 +135,4 @@ public class WeatherResult {
         this.additionalProperties.put(name, value);
     }
 
-	public List<WeatherInfo> getResults() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }

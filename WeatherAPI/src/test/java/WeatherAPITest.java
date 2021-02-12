@@ -16,8 +16,8 @@ public class WeatherAPITest {
 	@Test
 	public void testWeatherAPI() throws WeatherAPIException {
 		final WeatherAPIService weatherSearchService = WeatherAPI.getOpenWeatherMapService();
-		final List<WeatherInfo> results = weatherSearchService.getWeatherInfo("Athens");
-		Assert.assertFalse(results.isEmpty());
-		results.forEach(System.out::println);
+		final List<WeatherInfo> alerts = weatherSearchService.getWeatherInfo("Athens");
+		Assert.assertFalse(alerts.isEmpty());
+		alerts.forEach(System.out::println);
 }
 }

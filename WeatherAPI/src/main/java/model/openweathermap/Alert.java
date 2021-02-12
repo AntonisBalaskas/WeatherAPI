@@ -2,6 +2,7 @@
 package model.openweathermap;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
@@ -17,6 +18,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "start",
     "end",
     "description"
+    
 })
 public class Alert {
 
@@ -30,6 +32,8 @@ public class Alert {
     private Integer end;
     @JsonProperty("description")
     private String description;
+    @JsonProperty("alerts")
+    private List<Alert> alerts = null;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -93,4 +97,14 @@ public class Alert {
         this.additionalProperties.put(name, value);
     }
 
+    @JsonProperty("alerts")
+    public List<Alert> getAlerts() {
+        return alerts;
+    }
+    @JsonProperty("alerts")
+    public void setAlerts(List<Alert> alerts) {
+        this.alerts = alerts;
+    }
+
+	
 }
