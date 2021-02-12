@@ -1,5 +1,3 @@
-package WeatherAPI;
-
 import services.WeatherAPIService;
 
 public class WeatherAPI {

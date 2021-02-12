@@ -34,7 +34,7 @@ public class WeatherAPIService {
 		this.API_KEY = API_KEY;
 	}
 
-	public List<WeatherInfo> getWeatherInfo() throws WeatherAPIException {
+	public List<WeatherInfo> getWeatherInfo(String onecall) throws WeatherAPIException {
 		WeatherResult result = getAPIData("onecall", "hourly", API_URL, API_KEY);
 		List<WeatherInfo> weatherInfoList = new ArrayList<>(result.getResults().size());
 		for (WeatherInfo theResult : result.getResults()) {
@@ -79,4 +79,11 @@ public class WeatherAPIService {
 			throw new WeatherAPIException("Unable to create request URI.", e);
 		}
 	}
+
+	
+
+	
+
+
+
 }
