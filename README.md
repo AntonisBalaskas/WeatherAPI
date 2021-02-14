@@ -1,4 +1,5 @@
-#WeatherApp
+# WeatherAPI
+# WeatherApp
 ## Προαπαιτούμενα
  Προκειμένου να λειτουργήσει το WeatherApp  συμπεριλαμβάνουμε τα maven coordinates του WeatherAPI.
 ## Τρόπος εκκίνησης της εφαρμογής
