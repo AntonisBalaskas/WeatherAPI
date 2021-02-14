@@ -1,5 +1,17 @@
 # WeatherAPI
 # WeatherApp
+## Dependencies
+WeatheAPI library
+		<dependency>
+			<groupId>gr.unipi</groupId>
+			<artifactId>WeatherAPI</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+## Maven Coordinates
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>gr.unipi</groupId>
+  <artifactId>WeatherApp</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
 ## Προαπαιτούμενα
  Προκειμένου να λειτουργήσει το WeatherApp  συμπεριλαμβάνουμε τα maven coordinates του WeatherAPI.
 ## Τρόπος εκκίνησης της εφαρμογής
