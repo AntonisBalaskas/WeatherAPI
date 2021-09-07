@@ -1,5 +1,5 @@
 # WeatherAPI
-## Τρόπος εκκίνησης της εφαρμογής(Menu)
+## Τρόπος εκκίνησης της εφαρμογής Application(Menu)
  Το πρόγραμμα αποτελεί ένα console based menu και τρέχει ως Java Application
 ## Λειτουργίες Menu
 ### Εισαγωγή στο Menu
